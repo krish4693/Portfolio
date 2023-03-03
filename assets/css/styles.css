@@ -24,6 +24,7 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--bg-color);
+  scroll-padding-top: var(--scroll-padding,50px);
 }
 nav {
   position: sticky;
@@ -107,7 +108,7 @@ nav ul li {
 }
 
 .bio {
-  height: ;
+  /* height: ; */
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
@@ -128,7 +129,7 @@ hr {
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .more-about h2 {
@@ -157,7 +158,8 @@ hr {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
+  padding-top: 2.5rem;
 }
 
 .skill-header {
@@ -303,5 +305,11 @@ hr {
   height: 3rem;
 }
 
+.footer{
+  background-color: var(--bg-color);
+  text-align: center;
+  margin:2rem 0 0;
+  
+}
 
 
