@@ -355,11 +355,6 @@ footer {
   nav ul.show {
     transform: translateX(0);
   }
-  
-
-}
-
-@media screen and (max-width: 420px) {
   .hero img {
     height: 37.5rem;
     width: 23rem;
@@ -377,6 +372,18 @@ footer {
     max-width: 17.75rem;
   }
   .more-about{
-    margin-top: 15rem;
+    margin-top: 280px;
   }
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+  
+
+}
+
+@media screen and (max-width:380px) {
+    .more-about{
+      margin-top: 370px;
+    }
 } 
