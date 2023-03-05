@@ -79,14 +79,7 @@ nav ul {
 nav ul li {
   font-weight: var(--bold-font);
 }
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
-}
+
 /*css for hero*/
 
 .hero {
@@ -129,6 +122,8 @@ hr {
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
   /* margin-top: 4rem; */
 }
 
@@ -313,31 +308,75 @@ hr {
 
 }
 
-nav ul {
-  position: fixed;
-  background-color: var(--bg-color);
-  flex-direction: column;
-  top: 86px;
-  left: 10%;
-  width: 80%;
-  text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
-}
-
- nav ul li {
-  margin: 8px;
-}
 footer {
   background-color: var(--bg-color);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
 }
+
+
 .burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.nav ul{
+  position: fixed;
+  background-color: var(--bg-color);
+  flex-direction: column;
+}
+
+@media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+  .burger-menu {
     display: block;
   }
 
   nav ul.show {
     transform: translateX(0);
   }
+  
+
+}
+
+@media screen and (max-width: 420px) {
+  .hero img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
+  .more-about{
+    margin-top: 15rem;
+  }
+} 
