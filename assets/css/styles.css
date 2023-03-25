@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: 'Roboto Mono', monospace;;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -17,6 +17,7 @@
 /* Variables end */
 
 * {
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
