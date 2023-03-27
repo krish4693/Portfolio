@@ -123,10 +123,17 @@ hr {
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem 3.5rem;
-  /* margin-top: 4rem; */
+  max-width: 700px;
+  margin-top: 4rem;
+  box-shadow: ;
 }
+
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
@@ -136,12 +143,14 @@ hr {
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+
   /* text-align: center; */
 }
 
 .skills {
   max-width: 68.75rem;
   margin: auto;
+  /* margin-top: 500px; */
   text-align: center;
   margin: 2.5rem;
 }
@@ -190,6 +199,7 @@ hr {
 
 .project-card {
   width: 357px;
+  min-height: 235.64px;
   min-width: 5rem;
   border-radius: 11px;
   text-align: center;
@@ -378,7 +388,8 @@ footer {
     max-width: 17.75rem;
   }
   .more-about{
-    margin-top: 290px;
+    margin-top: 500px;
+    /* max-width: 110px; */
   }
   .icon {
     width: 5.875rem;
@@ -392,14 +403,26 @@ footer {
   }
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:391px) {
     .more-about{
-      margin-top: 370px;
+      margin-top: 10%;
     }
 } 
 @media screen and (max-width:1134px){
   .project-container{
     flex-direction: column;
+    margin-top: 700px;
     min-width: 300px;
+  }
+}
+
+@media screen and (max-width:395px){
+  .more-about{
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width:375px){
+  .more-about{
+    margin-top: 450px;
   }
 }
